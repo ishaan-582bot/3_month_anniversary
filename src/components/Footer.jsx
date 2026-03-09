@@ -30,6 +30,17 @@ export default function Footer() {
           {CONFIG.closingCredit}
         </p>
 
+        {/* Valentine Link Button */}
+        <div className="mt-12 relative z-50">
+          <a
+            href={`${import.meta.env.BASE_URL}valentine/index.html`}
+            className="inline-block px-8 py-3 rounded-full bg-red/20 border border-red/40 text-cream hover:bg-red/40 hover:shadow-[0_0_15px_rgba(230,57,70,0.5)] transition-all duration-300 hover:scale-105 cursor-pointer"
+            style={{ fontFamily: 'var(--font-cursive)', fontSize: '1.5rem' }}
+          >
+            💌 Take me back to Valentine's Day
+          </a>
+        </div>
+
         {/* Bottom spacer */}
         <div className="mt-16 w-16 h-px bg-gold/20 mx-auto" />
       </div>
